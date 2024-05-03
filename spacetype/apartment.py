@@ -5,8 +5,8 @@ class Apartment(Room):
         super().__init__(height, lenght, width)
         self.room_num = room_num
 
-    def calc_total_area(self):
-        return self.calc_area() * self.room_num
+    def calc_total_vol(self):
+        return self.calc_vol() * self.room_num
     
     def calc_heat_power(self):
-        return self.calc_total_area * 30.2
+        return self.calc_total_vol() * 30

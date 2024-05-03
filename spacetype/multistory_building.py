@@ -5,8 +5,8 @@ class MultistoryBuilding(Apartment):
         super().__init__(height, length, width, num_rooms)
         self.num_floors = num_floors
 
-    def calculate_total_area(self):
-        return super().calculate_total_area * self.num_floors
+    def calc_total_vol(self):
+        return super().calc_total_vol() * self.num_floors
     
-    def calculate_heat_power(self):
-        return self.calculate_total_area * 30.2
+    def calc_heat_power(self):
+        return self.calc_total_vol() * 30.2

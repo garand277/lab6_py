@@ -4,8 +4,8 @@ class Room:
         self.wight = wight
         self.height = height
 
-    def calc_area(self):
+    def calc_vol(self):
         return self.height * self.lenght * self.wight
     
     def calc_heat_power(self):
-        return self.calc_area * 30,2
+        return self.calc_vol() * 30
